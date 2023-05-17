@@ -1,26 +1,24 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# My Next.js App
+
+This is a simple React application bootstrapped with [Next.js](https://nextjs.org/)
+
+It has been created with the [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app) command : `` npx create-next-app@latest myapp ``
+
+## Requirements
+Minimum [NodeJS 16 and NMP 8.19.3](https://nodejs.org/en)
+
 
 ## Getting Started
+1. Go to the app roo directory: `` cd myapp ``
+2. Install Node Packages with Dependencies with the command:  ``npm install``
+3. Run the development server: `` npm run dev``
 
-First, run the development server:
+4. Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-```
+The web page will render two list items, the first one uses a static params without any state management, the second one uses the [React useState Hook](https://react.dev/reference/react/useState).
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+You can editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
 
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
-
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
-
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
-
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
 
 ## Learn More
 
