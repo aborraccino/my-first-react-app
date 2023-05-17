@@ -8,7 +8,7 @@ export default function Home() {
       <>
         {
           ints.map(id => {
-            return <li>{id}</li>
+            return <li key={id}>{id}</li>
           })
         }
       </>
@@ -39,19 +39,19 @@ export default function Home() {
 
   return (
     <div id="container">
-      <p>
+      <span>
         List Items - static external params - no state
         <ul>
           <ListItem ints={ints}/>
         </ul>
-      </p>
+      </span>
       
-      <p>
+      <span>
         List Items - useState
         <ul>
           <ListItemWithState ints={ints2} addValue={addValue}/>
         </ul>
-      </p>
+      </span>
     </div>
   )
 }
